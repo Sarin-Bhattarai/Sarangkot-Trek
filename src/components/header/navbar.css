@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+header {
+  padding: 20px 0px;
+  background-color: #262424;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 45px;
+}
+
+header ul li a {
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+header ul li a:hover {
+  color: rgb(138, 138, 190);
+  font-weight: 600;
+}
+
+.HeaderIcon {
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.navbar-items-icon {
+  color: #000;
+  display: none;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav {
+  margin-top: 13px;
+}
+
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #262424;
+  box-shadow: 0 2px 28px 0px rgba(0 0 0 /60%);
+  width: 100%;
+  z-index: 10;
+}
+
+.trek-btn {
+  padding: 10px 30px;
+  background: #2569b9;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #fafafa;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+.trek-btn:hover {
+  transition: 0.5s;
+  background-color: rgb(185, 185, 231);
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 991px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: #262424;
+    left: 50px;
+    top: 75px;
+    transition: 0.5s;
+    width: 80%;
+    height: 45vh;
+    z-index: 5;
+  }
+
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  header ul li {
+    margin-bottom: 30px;
+  }
+
+  .navbar-items-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    color: #000;
+    border: 1px solid #000;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
