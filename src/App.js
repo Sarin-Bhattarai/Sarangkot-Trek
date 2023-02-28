@@ -8,6 +8,7 @@ import Trekking from "./pages/Trekking/Trekking";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Services from "./pages/Social-Services/Services";
 import SubRegion from "./pages/subRegion/SubRegion";
+import Other from "./pages/Other/Other";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Up from "./components/upper-header/Up";
@@ -122,6 +123,18 @@ const App = () => {
                     <Up />
                     <Navbar />
                     <Faqs />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/others"
+                exact
+                element={
+                  <>
+                    <Up />
+                    <Navbar />
+                    <Other />
                     <Footer />
                   </>
                 }

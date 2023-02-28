@@ -140,7 +140,7 @@ const Afaq = () => {
             <h1>FAQ</h1>
           </div>
           <div className="profile-section">
-            <h4>Bishow Raj Adhikari</h4>
+            <h4>Harry Lal Sharma</h4>
             <img src={Admin} alt="profile" />
           </div>
         </div>

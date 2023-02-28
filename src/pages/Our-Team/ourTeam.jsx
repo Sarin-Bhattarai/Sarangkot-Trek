@@ -46,6 +46,7 @@ const OurTeam = () => {
               textAlign: "center",
               fontSize: "32px",
               textDecoration: "underline",
+              color: "#25B92B",
             }}
           >
             Terms & Conditions
@@ -65,7 +66,7 @@ const OurTeam = () => {
               All bookings are made with Out of Town Adventure Pvt. Ltd.,
               Registered Company Number 207765/075/076 (hereinafter referred to
               as The Company) whose registered office is the Pokhara-6 khahara,
-              Nepal. The Head of The Company is <b>Bishow Raj Adhikari</b>.
+              Nepal. The Head of The Company is <b>Harry Lal Sharma</b>.
             </p>
 
             <ul className="ul-team">

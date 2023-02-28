@@ -191,7 +191,7 @@ const Home = () => {
                       style={{
                         lineHeight: "0",
                       }}
-                      defaultValue={4}
+                      defaultValue={5}
                     />
                   </div>
                 </div>
@@ -245,7 +245,7 @@ const Home = () => {
                       style={{
                         lineHeight: "0",
                       }}
-                      defaultValue={4}
+                      defaultValue={5}
                     />
                   </div>
                 </div>

@@ -31,6 +31,7 @@ const Trekking = () => {
           style={{
             textAlign: "center",
             fontSize: "32px",
+            color: "#25B92B",
           }}
         >
           Select a Region
@@ -62,6 +63,7 @@ const Trekking = () => {
             style={{
               textAlign: "center",
               fontSize: "32px",
+              color: "#25B92B",
             }}
           >
             Trekking Packing list

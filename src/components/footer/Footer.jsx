@@ -43,6 +43,7 @@ const Footer = () => {
               style={{
                 fontSize: "20px",
                 fontWeight: "bold",
+                color: "#fff",
               }}
             >
               “The world reveals itself to those who travel on foot.”
@@ -67,7 +68,14 @@ const Footer = () => {
         <div className="legal container">
           <p>Copyright @ {moment().year()} All rights reserved.</p>
           <label>
-            Design & Developed by <span>P & S</span>
+            <span
+              style={{
+                color: "#25B92B",
+              }}
+            >
+              Design & Developed by
+            </span>{" "}
+            <span>P & S</span>
           </label>
         </div>
       </footer>

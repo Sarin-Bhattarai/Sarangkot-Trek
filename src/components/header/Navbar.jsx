@@ -31,11 +31,14 @@ const Navbar = () => {
               <li>
                 <Link to="/ourTeam">Our Team</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services">Social Services</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/faq">Faqs</Link>
+              </li>
+              <li>
+                <Link to="/others">Others</Link>
               </li>
             </ul>
           </div>

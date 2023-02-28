@@ -478,7 +478,7 @@ const Contact = () => {
                     style={{
                       width: "100%",
                       marginTop: "10px",
-                      backgroundColor: "#4caece",
+                      backgroundColor: "#25B969",
                       color: "#fff",
                       border: "none",
                     }}
@@ -496,14 +496,14 @@ const Contact = () => {
                   height="700px"
                   width="110%"
                   className="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.3845444618014!2d83.95955936943169!3d28.2170399212728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995956234c35749%3A0x1d62cdd8fecab286!2sOut%20of%20Town%20Adventure%20Pvt.%20Ltd!5e0!3m2!1sen!2snp!4v1659759531597!5m2!1sen!2snp"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.8428724305036!2d83.96049401491332!3d28.21208608258563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595d36ed26d3d%3A0x9524469f7487ee75!2zc2FyYW5na290IHRyZWtzIGFuZCBleHBlZGl0aW9uIHByaXZhdGUgbGltaXRlZC7sgqzrnpHqvYMg7Yq466CI6rmFIOyVoOyghOyLnA!5e0!3m2!1sen!2snp!4v1677544992607!5m2!1sen!2snp"
                   data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWVtYmVkJTIyJTJDJTIyYWRkcmVzcyUyMiUzQSUyMk1hbmhhdHRhbiUyMiUyQyUyMnpvb20lMjIlM0FudWxsJTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlMkMlMjJlbWJlZCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGd3d3Lmdvb2dsZS5jb20lMkZtYXBzJTJGZW1iZWQlM0ZwYiUzRCExbTE4ITFtMTIhMW0zITFkMTYxOC4zODQ1NDQ0NjE4MDE0ITJkODMuOTU5NTU5MzY5NDMxNjkhM2QyOC4yMTcwMzk5MjEyNzI4ITJtMyExZjAhMmYwITNmMCEzbTIhMWkxMDI0ITJpNzY4ITRmMTMuMSEzbTMhMW0yITFzMHgzOTk1OTU2MjM0YzM1NzQ5JTI1M0EweDFkNjJjZGQ4ZmVjYWIyODYhMnNPdXQlMjUyMG9mJTI1MjBUb3duJTI1MjBBZHZlbnR1cmUlMjUyMFB2dC4lMjUyMEx0ZCE1ZTAhM20yITFzZW4hMnNucCE0djE2NTk3NTk1MzE1OTchNW0yITFzZW4hMnNucCUyMiU3RA=="
                 />
               </div>
             </div>
           </div>
 
-          <div className="contact-info">
+          {/* <div className="contact-info">
             <Row
               style={{
                 justifyContent: "space-between",
@@ -536,7 +536,7 @@ const Contact = () => {
                 <p>Open 24 hours, 364 days</p>
               </div>
             </Row>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
