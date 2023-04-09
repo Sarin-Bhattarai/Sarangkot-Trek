@@ -1,9 +1,11 @@
 import "./navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [sidebar, setSidebar] = useState(false);
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -49,7 +51,9 @@ const Navbar = () => {
             {sidebar ? <MdOutlineClose /> : <MdOutlineMenu />}
           </button>
           <div>
-            <button className="trek-btn">Trek Now</button>
+            <button onClick={() => navigate("/contact")} className="trek-btn">
+              Trek Now
+            </button>
           </div>
         </div>
       </header>
