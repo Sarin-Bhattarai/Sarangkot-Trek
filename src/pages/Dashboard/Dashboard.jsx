@@ -8,10 +8,12 @@ import {
   MdNature,
   MdReorder,
   MdVerified,
+  MdOutlineBuild,
 } from "react-icons/md";
 import Afaq from "./Faq/Afaq";
 import Aregion from "./Region/Aregion";
 import Ateam from "./Team/Ateam";
+import Aother from "./Other/Aother";
 import Asubregion from "./subRegion/Asubregion";
 
 const { Sider, Content } = Layout;
@@ -25,14 +27,19 @@ const Dashboard = () => {
 
   const items = [
     {
+      key: "/api/dashboard/region",
+      icon: <MdOutlineMyLocation />,
+      label: "Trekking",
+    },
+    {
+      key: "/api/dashboard/subRegion",
+      icon: <MdNature />,
+      label: "SubRegion",
+    },
+    {
       key: "/api/dashboard/faq",
       icon: <MdOutlineArrowForward />,
       label: "Faq",
-    },
-    {
-      key: "/api/dashboard/region",
-      icon: <MdOutlineMyLocation />,
-      label: "Region",
     },
     {
       key: "/api/dashboard/team",
@@ -40,9 +47,9 @@ const Dashboard = () => {
       label: "Team",
     },
     {
-      key: "/api/dashboard/subRegion",
-      icon: <MdNature />,
-      label: "SubRegion",
+      key: "/api/dashboard/others",
+      icon: <MdOutlineBuild />,
+      label: "Other Services",
     },
   ];
 
@@ -90,6 +97,7 @@ const Dashboard = () => {
           <Route path="/api/dashboard/faq" element={<Afaq />} />
           <Route path="/api/dashboard/region" element={<Aregion />} />
           <Route path="/api/dashboard/team" element={<Ateam />} />
+          <Route path="/api/dashboard/others" element={<Aother />} />
           <Route path="/api/dashboard/subRegion" element={<Asubregion />} />
         </Routes>
       </Content>

@@ -13,21 +13,21 @@ import {
 } from "antd";
 import { AiFillEdit, AiFillDelete, AiOutlineUpload } from "react-icons/ai";
 import {
-  getRegion,
-  postRegion,
-  editRegion,
-  deleteRegion,
-} from "../../../utils/api/regionApi";
+  getOther,
+  postOther,
+  editOther,
+  deleteOther,
+} from "../../../utils/api/otherApi";
 import ShowImage from "../../../utils/data/showImage";
 import { useNavigate } from "react-router-dom";
 const { TextArea } = Input;
 
-const Aregion = () => {
+const Aother = () => {
   const navigate = useNavigate();
   const [state, setState] = useState({
-    regions: [],
+    others: [],
     error: null,
-    newRegion: { id: "", title: "", description: "", image: null },
+    newOther: { id: "", title: "", image: null },
     modalVisible: false,
     updateLoading: false,
   });
@@ -43,7 +43,7 @@ const Aregion = () => {
     setIsModalOpen(false);
   };
   const handleCancel = () => {
-    setState({ ...state, newRegion: "" });
+    setState({ ...state, newOther: "" });
     setIsModalOpen(false);
   };
 
@@ -54,16 +54,16 @@ const Aregion = () => {
       setState({
         ...state,
         error: null,
-        regions: state?.regions?.map((region) => {
-          if (region._id === state.newRegion.id) {
+        others: state?.others?.map((other) => {
+          if (other._id === state.newOther.id) {
             setState({
               ...state,
               error: null,
-              newRegion: { ...state.newRegion, [name]: value },
+              newOther: { ...state.newOther, [name]: value },
             });
-            return region;
+            return other;
           } else {
-            return region;
+            return other;
           }
         }),
       });
@@ -71,85 +71,85 @@ const Aregion = () => {
       setState({
         ...state,
         error: null,
-        newRegion: { ...state.newRegion, [name]: value },
+        newOther: { ...state.newOther, [name]: value },
       });
     }
   };
 
   const clickSubmit = async () => {
-    const { title, description, image } = state.newRegion;
+    const { title, image } = state.newOther;
     try {
-      const response = await postRegion(title, description, image);
+      const response = await postOther(title, image);
       setState({
         ...state,
-        newRegion: response?.data,
+        newOther: response?.data,
         error: null,
         modalVisible: false,
-        regions: [...state.regions, response?.data],
+        others: [...state.others, response?.data],
       });
-      message.success("Region added");
+      message.success("Other service added");
     } catch (error) {
       setState({
         ...state,
         error: error,
         modalVisible: false,
       });
-      message.error("Error adding region");
+      message.error("Error adding other service");
     }
   };
 
   //for edit region process
 
   const handleSubmit = (name, id, value) => {
-    const newRegions = [...state.regions];
-    const index = newRegions.findIndex((element) => element?._id === id);
-    newRegions[index] = { ...newRegions[index], [name]: value }; //update the new value of element
+    const newOthers = [...state.others];
+    const index = newOthers.findIndex((element) => element?._id === id);
+    newOthers[index] = { ...newOthers[index], [name]: value }; //update the new value of element
     setState((prev) => {
-      return { ...prev, regions: newRegions };
+      return { ...prev, others: newOthers };
     });
   };
 
-  const handleEditImageUpload = (id, title, description, image) => {
+  const handleEditImageUpload = (id, title, image) => {
     setState({ ...state, updateLoading: true });
-    editRegion(id, title, description, image)
+    editOther(id, title, image)
       .then((response) => {
-        const updatedRegions = state?.regions?.map((region) => {
-          if (region._id === id) {
+        const updatedOthers = state?.others?.map((other) => {
+          if (other._id === id) {
             return response?.data;
           } else {
-            return region;
+            return other;
           }
         });
         setState({
           ...state,
-          regions: updatedRegions,
+          others: updatedOthers,
           updateLoading: false,
           modalVisible: false,
-          newRegion: {}, // reset the newRegion object in state
+          newOther: {}, // reset the newRegion object in state
         });
-        message.success("Successfully updated region");
+        message.success("Successfully updated other");
         setTimeout(() => {
           navigate("/api/dashboard");
         }, 1000);
       })
       .catch((error) => {
         setState({ ...state, updateLoading: false });
-        message.error(error?.message || "Error updating region");
+        message.error(error?.message || "Error updating other");
       });
   };
 
   //for delete process
   const confirm = (id) => {
-    deleteRegion(id)
-      .then((region) => {
-        message.success("Region deleted");
+    deleteOther(id)
+      .then((other) => {
+        message.success("Other deleted");
         setTimeout(() => {
           navigate("/api/dashboard");
         }, 1000);
       })
       .catch((error) => {
         setState({ ...state, error: error, loading: false });
-        message.error(error?.message || "Error deleting region");
+        message.error(error?.message || "Error deleting other");
       });
   };
   const cancel = (e) => {
@@ -157,10 +157,10 @@ const Aregion = () => {
     message.error("Delete cancelled");
   };
 
-  const fetchRegions = () => {
+  const fetchOthers = () => {
     setState({ ...state, error: null });
-    getRegion()
-      .then(({ data }) => setState({ ...state, regions: data, error: null }))
+    getOther()
+      .then(({ data }) => setState({ ...state, others: data, error: null }))
       .catch({ ...state, error: null });
   };
 
@@ -177,22 +177,6 @@ const Aregion = () => {
       key: "title",
       render: (text) => <p className="dashboard-paragraph">{text}</p>,
     },
-    {
-      title: "Description",
-      dataIndex: "description",
-      key: "description",
-      render: (text) => (
-        <p
-          style={{
-            width: "90%",
-          }}
-          className="dashboard-paragraph"
-        >
-          {text}
-        </p>
-      ),
-    },
-
     {
       title: "Image",
       dataIndex: "image",
@@ -219,8 +203,8 @@ const Aregion = () => {
                 onClick={() => {
                   setState({
                     ...state,
-                    newRegion: {
-                      ...state.newRegion,
+                    newOther: {
+                      ...state.newOther,
                       id: _id._id,
                     },
                     modalVisible: {
@@ -238,23 +222,16 @@ const Aregion = () => {
                 />
               </Button>
               <Modal
-                title="Edit Region"
+                title="Edit Other"
                 okText="Edit"
                 style={{ top: 20 }}
                 visible={state.modalVisible[_id._id]}
                 okButtonProps={{ loading: state.updateLoading }}
                 onOk={(e) => {
                   e.preventDefault();
-                  const region = state?.regions?.find(
-                    (el) => el._id === _id._id
-                  );
-                  const { title, description, image } = region;
-                  handleEditImageUpload(
-                    _id._id,
-                    title,
-                    description,
-                    newImage || image
-                  );
+                  const other = state?.others?.find((el) => el._id === _id._id);
+                  const { title, image } = other;
+                  handleEditImageUpload(_id._id, title, newImage || image);
                   setState({ ...state, modalVisible: false });
                 }}
                 onCancel={() => setState({ ...state, modalVisible: false })}
@@ -267,22 +244,10 @@ const Aregion = () => {
                       handleSubmit("title", _id._id, e.target.value)
                     }
                     value={
-                      state?.regions?.find((el) => el._id === _id._id)?.title ||
+                      state?.others?.find((el) => el._id === _id._id)?.title ||
                       ""
                     }
                     name="title"
-                  />
-                  <label>Description</label>
-                  <TextArea
-                    rows={6}
-                    onChange={(e) =>
-                      handleSubmit("description", _id._id, e.target.value)
-                    }
-                    value={
-                      state?.regions?.find((el) => el._id === _id._id)
-                        ?.description || ""
-                    }
-                    name="description"
                   />
                   <br />
                   <br />
@@ -292,19 +257,19 @@ const Aregion = () => {
                       handleChange("image", file, true);
                       return false; // prevent Ant Design from automatically uploading the file
                     }}
-                    fileList={state?.regions
-                      ?.filter((region) => region._id === _id._id)
-                      ?.map((region) =>
-                        region?.image
+                    fileList={state?.others
+                      ?.filter((other) => other._id === _id._id)
+                      ?.map((other) =>
+                        other?.image
                           ? {
-                              uid: region._id,
-                              name: region?.title,
+                              uid: other._id,
+                              name: other?.title,
                               status: "done",
-                              url: region?.image,
+                              url: other?.image,
                             }
                           : null
                       )
-                      .filter((region) => region !== null)}
+                      .filter((other) => other !== null)}
                     name="image"
                   >
                     <Button icon={<AiOutlineUpload />}>Upload Image</Button>
@@ -314,8 +279,8 @@ const Aregion = () => {
             </Space>
 
             <Popconfirm
-              title="Delete the region"
-              description="Are you sure to delete this region?"
+              title="Delete the other"
+              description="Are you sure to delete this other?"
               onConfirm={() => confirm(_id._id)}
               onCancel={cancel}
               okText="Yes"
@@ -336,13 +301,12 @@ const Aregion = () => {
   ];
 
   useEffect(() => {
-    fetchRegions();
+    fetchOthers();
   }, []);
 
-  const mappedData = state?.regions?.map((item) => ({
+  const mappedData = state?.others?.map((item) => ({
     _id: item?._id,
     title: item?.title,
-    description: item?.description,
     image: <ShowImage region={item?.image} url="uploads" />,
   }));
 
@@ -351,7 +315,7 @@ const Aregion = () => {
       <div className="mini-container">
         <div className="head-container">
           <div className="head-section">
-            <h1>Region</h1>
+            <h1>Other Service</h1>
           </div>
           <div className="profile-section">
             <h4>Harry Lal Sharma</h4>
@@ -365,12 +329,12 @@ const Aregion = () => {
           }}
           className="content-container"
         >
-          <h1>Action to your region-section</h1>
+          <h1>Action to your other-section</h1>
           <Button type="primary" onClick={showModal}>
             Add
           </Button>
           <Modal
-            title="Add Region"
+            title="Add Other"
             open={isModalOpen}
             onOk={handleOk}
             onCancel={handleCancel}
@@ -379,22 +343,12 @@ const Aregion = () => {
               <label>Title</label>
               <TextArea
                 type="text"
-                placeholder="Region title"
+                placeholder="Other title"
                 onChange={(e) => handleChange("title", e.target.value)}
-                value={state.newRegion.title}
+                value={state.newOther.title}
                 required
                 rows={4}
                 name="title"
-              />
-              <label>Description</label>
-              <TextArea
-                type="text"
-                placeholder="Region description"
-                onChange={(e) => handleChange("description", e.target.value)}
-                value={state.newRegion.description}
-                required
-                rows={6}
-                name="description"
               />
               <br />
               <br />
@@ -408,7 +362,7 @@ const Aregion = () => {
                   handleChange("image", file);
                   return false; // prevent Ant Design from automatically uploading the file
                 }}
-                fileList={state.newRegion.image ? [state.newRegion.image] : []}
+                fileList={state.newOther.image ? [state.newOther.image] : []}
                 name="image"
               >
                 <Button icon={<AiOutlineUpload />}>Click to Upload</Button>
@@ -422,4 +376,4 @@ const Aregion = () => {
   );
 };
 
-export default Aregion;
+export default Aother;

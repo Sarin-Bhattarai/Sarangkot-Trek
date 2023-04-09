@@ -2,13 +2,9 @@ import React from "react";
 import "./footer.css";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import moment from "moment";
-import { Row } from "antd";
-import logo from "../../resources/images/logo.jpg";
-import logo1 from "../../resources/images/logo1.jpg";
-import logo2 from "../../resources/images/logo2.jpg";
-import logo3 from "../../resources/images/logo3.jpg";
-import logo4 from "../../resources/images/logo4.png";
-import logo5 from "../../resources/images/logo5.png";
+import { Link } from "react-router-dom";
+
+import logo from "../../resources/images/logo.png";
 
 const Footer = () => {
   return (
@@ -21,32 +17,50 @@ const Footer = () => {
 
           <div className="box">
             <div className="footer-info">
-              <h2
-                style={{
-                  textDecoration: "underline",
-                }}
-              >
-                Affiliated With
-              </h2>
-              <Row>
-                <img src={logo1} alt="Affiliated Partners" />
-                <img src={logo2} alt="Affiliated Partners" />
-                <img src={logo3} alt="Affiliated Partners" />
-                <img src={logo4} alt="Affiliated Partners" />
-                <img src={logo5} alt="Affiliated Partners" />
-              </Row>
+              <h2>ABOUT US</h2>
+              <p>
+                Sarangkot Treks is growing trekking agency served for managing
+                your treks and tours outshining in providing services and to
+                enchance your adventurous moment.
+              </p>
             </div>
+          </div>
+
+          <div className="box">
+            <h2>SUPPORT LINKS</h2>
+            <ul>
+              <li>
+                <Link className="footer-links" to="/ourTeam">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link className="footer-links" to="/">
+                  Harry Guest House
+                </Link>
+              </li>
+              <li>
+                <Link className="footer-links" to="/faq">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link className="footer-links" to="/others">
+                  Other Services
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div className="box">
             <p
               style={{
-                fontSize: "20px",
+                fontSize: "16px",
                 fontWeight: "bold",
                 color: "#fff",
               }}
             >
-              “The world reveals itself to those who travel on foot.”
+              "CREATE YOUR ADVENTEROUS MOMENTS EXPLORING UNIDENTIFIED NATURE"
             </p>
             <div className="icon">
               <FaMapMarkerAlt className="ia" />
@@ -60,7 +74,7 @@ const Footer = () => {
             </div>
             <div className="icon">
               <FaEnvelope className="ia" />
-              <label>Email: bishow47@gmail.com</label>
+              <label>Email: harry5847@gmail.com</label>
             </div>
           </div>
         </div>
@@ -75,7 +89,7 @@ const Footer = () => {
             >
               Design & Developed by
             </span>{" "}
-            <span>P & S</span>
+            <span>Rentine Software inc.</span>
           </label>
         </div>
       </footer>

@@ -1,7 +1,7 @@
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
 }
 
 footer {
@@ -23,7 +23,7 @@ footer h2 {
 .box img {
   width: 150px;
   height: 150px;
-  border-radius: 75px;
+  border-radius: 30px;
 }
 
 .footer-info img {
@@ -69,4 +69,19 @@ footer .icon .ia {
 
 .legal p {
   color: #fff;
+}
+
+.footer-info p {
+  color: #fff;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: 400;
+  width: 105%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-links {
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
 }

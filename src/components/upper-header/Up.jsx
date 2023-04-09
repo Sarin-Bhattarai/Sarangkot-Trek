@@ -1,6 +1,6 @@
 import React from "react";
 import "./up.css";
-import logo from "../../resources/images/logo.jpg";
+import logo from "../../resources/images/logo.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Up = () => {
