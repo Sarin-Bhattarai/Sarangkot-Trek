@@ -1,21 +1,25 @@
 import "./contact.css";
 import React, { useState } from "react";
-import { Form, Input, Button, DatePicker, Select, Row } from "antd";
+import { Form, Input, Button, DatePicker, Select } from "antd";
 import { useForm } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
 import moment from "moment";
-import { MdCall, MdLocationOn, MdOutlineWatch } from "react-icons/md";
-const { Option, OptGroup } = Select;
+const { Option } = Select;
 
 const Contact = () => {
   const navigate = useNavigate();
-  const [state, handleSubmit] = useForm("mleayydw");
+  const [state, handleSubmit] = useForm("mgebpoyj");
   const [trekkingId, setId] = useState(1);
   if (state.succeeded) {
     return (
-      <div>
-        <p>Thankyou your booking has been placed!</p>;
-      </div>
+      <>
+        <div>
+          <p>Thankyou your booking has been placed!</p>;
+        </div>
+        {setTimeout(() => {
+          navigate("/");
+        }, 1000)}
+      </>
     );
   }
 

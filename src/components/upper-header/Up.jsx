@@ -19,12 +19,12 @@ const Up = () => {
           </a>
         </div>
         <div className="first-div">
-          <p>Company Licence no 521/057</p>
-          <p>mail@mountaintrekking.com.np</p>
+          <p>Company Licence no 610405899</p>
+          <p>harry884839@gmail.com</p>
         </div>
         <div className="second-div">
-          <p>Telephone No: 061-6231</p>
-          <p>Phone No: 9856011220</p>
+          <p>Telephone No: 061-453900</p>
+          <p>Phone No: +977-9846056804</p>
         </div>
         <div className="socialIcon">
           <FaFacebookF className="i facebook" />

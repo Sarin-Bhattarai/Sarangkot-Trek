@@ -89,7 +89,7 @@ const Footer = () => {
             >
               Design & Developed by
             </span>{" "}
-            <span>Rentine Software inc.</span>
+            <span>Untech boys</span>
           </label>
         </div>
       </footer>
