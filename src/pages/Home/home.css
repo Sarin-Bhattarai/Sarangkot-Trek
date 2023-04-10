@@ -28,7 +28,7 @@
 .home-grid p {
   color: #d9d9d9;
   font-size: 40px;
-  line-height: 0px;
+  /* line-height: 0px; */
   margin-top: -20px;
   font-family: "Poppins", sans-serif;
 }

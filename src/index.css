@@ -244,6 +244,23 @@ svg {
     width: 100% !important;
     height: 100% !important;
   }
+
+  .trek-btn {
+    visibility: hidden !important;
+  }
+
+  .container p {
+    width: 100% !important;
+  }
+
+  #tt-tt {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .home-image {
+    min-height: 90vh !important;
+  }
 }
 
 /* --------------Responsive--------------  */

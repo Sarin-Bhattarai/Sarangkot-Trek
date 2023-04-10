@@ -12,6 +12,7 @@ const Up = () => {
           display: "flex",
           justifyContent: "space-between",
         }}
+        id="tt-tt"
       >
         <div className="logo">
           <a href="/">
@@ -27,9 +28,18 @@ const Up = () => {
           <p>Phone No: +977-9846056804</p>
         </div>
         <div className="socialIcon">
-          <FaFacebookF className="i facebook" />
-          <FaInstagram className="i instagram" />
-          <FaTwitter className="i twitter" />
+          <a
+            href="https://www.facebook.com/profile.php?id=100088485020931"
+            target="next"
+          >
+            <FaFacebookF className="i facebook" />
+          </a>
+          <a href="https://www.instagram.com/sarangkottreks/" target="next">
+            <FaInstagram className="i instagram" />
+          </a>
+          <a href="https://twitter.com/SarangkotTrek" target="next">
+            <FaTwitter className="i twitter" />
+          </a>
         </div>
       </div>
     </header>
