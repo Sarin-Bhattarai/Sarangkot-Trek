@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
             <div className="icon">
               <FaEnvelope className="ia" />
-              <label>Email: harry5847@gmail.com</label>
+              <label>Email: harry5847@yahoo.com</label>
             </div>
           </div>
         </div>
