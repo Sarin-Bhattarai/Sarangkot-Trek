@@ -66,7 +66,7 @@ const Footer = () => {
             <div className="icon">
               <FaMapMarkerAlt className="ia" />
               <label>
-                Location: Lakeside, 6 Pokhara, Khahare, Nahar Marga, Nepal
+                Location: Lakeside, 6 Pokhara, Nareswor (next to street no. 28)
               </label>
             </div>
             <div className="icon">
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
             <div className="icon">
               <RiKakaoTalkFill className="ia" />
-              <label>Kakao Talk ID: +977-9846056804</label>
+              <label>Kakao Talk ID: hottelavocado</label>
             </div>
             <div className="icon">
               <FaEnvelope className="ia" />
