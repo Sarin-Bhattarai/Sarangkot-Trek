@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { RiKakaoTalkFill } from "react-icons/ri";
 import moment from "moment";
 import { Link } from "react-router-dom";
 
@@ -70,7 +71,11 @@ const Footer = () => {
             </div>
             <div className="icon">
               <FaPhoneAlt className="ia" />
-              <label>Phone: +977-9825107555</label>
+              <label>Phone: +977-9846056804</label>
+            </div>
+            <div className="icon">
+              <RiKakaoTalkFill className="ia" />
+              <label>Kakao Talk ID: +977-9846056804</label>
             </div>
             <div className="icon">
               <FaEnvelope className="ia" />

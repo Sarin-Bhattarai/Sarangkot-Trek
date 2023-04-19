@@ -200,6 +200,9 @@ svg {
 /* --------------Responsive--------------  */
 
 @media screen and (max-width: 991px) {
+  .container {
+    padding: 10px;
+  }
   .home-grid {
     grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -230,6 +233,18 @@ svg {
 
   .second-section {
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .second-section-p {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .second-section-p > div:first-child {
+    order: 2;
+  }
+
+  .second-section-p > div:last-child {
+    order: 1;
   }
 
   .third-section {

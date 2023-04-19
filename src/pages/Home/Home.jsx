@@ -4,6 +4,8 @@ import { Rate } from "antd";
 import { TiTick } from "react-icons/ti";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Test from "../../resources/images/test.jpg";
+import Everest from "../../resources/images/Everest-region.jpg";
+import Manaslu from "../../resources/images/Manaslu-region.jpg";
 import Region from "../../resources/images/region.jpg";
 import Korean from "../../resources/images/Korean.png";
 import Laura from "../../resources/images/Laura.png";
@@ -148,10 +150,10 @@ const Home = () => {
                 </button>
               </div>
               <div>
-                <img src={Region} alt="mountain" />
+                <img src={Everest} alt="mountain" />
               </div>
             </div>
-            <div className="second-section">
+            <div className="second-section-p">
               <div>
                 <img src={Region} alt="mountain" />
               </div>
@@ -205,7 +207,7 @@ const Home = () => {
                 </button>
               </div>
               <div>
-                <img src={Region} alt="mountain" />
+                <img src={Manaslu} alt="mountain" />
               </div>
             </div>
           </div>

@@ -40,7 +40,7 @@
   grid-gap: 40px;
 }
 
-.second-section h1 {
+.second-section h4 {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -54,8 +54,34 @@
   text-align: justify;
   font-family: "Poppins", sans-serif;
 }
-
 .second-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.second-section-p {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.second-section-p h4 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border-bottom: 3px solid #2569b9;
+  position: relative;
+}
+
+.second-section-p p {
+  font-size: 18px;
+  position: relative;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+.second-section-p img {
   width: 100%;
   height: 100%;
   object-fit: contain;
