@@ -4,8 +4,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import moment from "moment";
 import { Link } from "react-router-dom";
-
-import logo from "../../resources/images/logo.png";
+import logo from "../../resources/images/footerlogo.png";
 
 const Footer = () => {
   return (
