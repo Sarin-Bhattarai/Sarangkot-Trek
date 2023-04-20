@@ -52,9 +52,9 @@ const SubRegion = () => {
                           textDecoration: "underline",
                         }}
                       >
-                        Including during the period
+                        Package Booking
                       </h3>
-                      <p>{sr?.includedetails}</p>
+                      <p>{sr?.packagebooking}</p>
                     </div>
                     <div>
                       <h3
@@ -64,9 +64,9 @@ const SubRegion = () => {
                           textDecoration: "underline",
                         }}
                       >
-                        Cost excludes
+                        Non Package Booking
                       </h3>
-                      <p>{sr?.excludedetails}</p>
+                      <p>{sr?.nonpackagebooking}</p>
                     </div>
                   </div>
                 </div>

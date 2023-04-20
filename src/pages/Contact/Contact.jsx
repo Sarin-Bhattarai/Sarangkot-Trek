@@ -30,29 +30,9 @@ const Contact = () => {
       id: 1,
     },
     {
-      label: "Everest region",
-      value: "Everest region",
-      id: 2,
-    },
-    {
-      label: "Langtang region",
-      value: "Langtang region",
-      id: 3,
-    },
-    {
-      label: "Kanchangunga region",
-      value: "Kanchangunga region",
-      id: 4,
-    },
-    {
       label: "Manaslu region",
       value: "Manaslu region",
       id: 5,
-    },
-    {
-      label: "Far-western region",
-      value: "Far-western region",
-      id: 6,
     },
     {
       label: "Dhaulagiri region",
@@ -283,28 +263,33 @@ const Contact = () => {
       sub_id: 7,
     },
     {
-      label: "Kathmandu City Sightseeing Tour",
-      value: "Kathmandu City Sightseeing Tour",
+      label: "Sarangkot View Point",
+      value: "Sarangkot View Point",
       sub_id: 8,
     },
     {
-      label: "Pokhara City Sightseeing Tour",
-      value: "Pokhara City Sightseeing Tour",
+      label: "Pokhara Sightseeing Tour",
+      value: "Pokhara Sightseeing Tour",
       sub_id: 8,
     },
     {
-      label: "Annapurna Circuit Half Biking Tour",
-      value: "Annapurna Circuit Half Biking Tour",
+      label: "Australian Camp",
+      value: "Australian Camp",
       sub_id: 8,
     },
     {
-      label: "Kathmandu One Day Biking Tour",
-      value: "Kathmandu One Day Biking Tour",
+      label: "Panchase",
+      value: "Panchase",
       sub_id: 8,
     },
     {
-      label: "Pokhara One day Biking Tour",
-      value: "Pokhara One day Biking Tour",
+      label: "Dhampus",
+      value: "Dhampus",
+      sub_id: 8,
+    },
+    {
+      label: "Astham",
+      value: "Astham",
       sub_id: 8,
     },
     {

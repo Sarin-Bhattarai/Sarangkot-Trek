@@ -33,8 +33,8 @@ const Asubregion = () => {
       title: "",
       description: "",
       image: [],
-      includedetails: "",
-      excludedetails: "",
+      packagebooking: "",
+      nonpackagebooking: "",
     },
     modalVisible: false,
     updateLoading: false,
@@ -92,15 +92,15 @@ const Asubregion = () => {
   };
 
   const clickSubmit = async () => {
-    const { title, description, image, includedetails, excludedetails } =
+    const { title, description, image, packagebooking, nonpackagebooking } =
       state.newSubRegion;
     try {
       const response = await postSubRegion(
         title,
         description,
         image,
-        includedetails,
-        excludedetails
+        packagebooking,
+        nonpackagebooking
       );
       setState({
         ...state,
@@ -134,11 +134,18 @@ const Asubregion = () => {
     title,
     description,
     image,
-    includedetails,
-    excludedetails
+    packagebooking,
+    nonpackagebooking
   ) => {
     setState({ ...state, updateLoading: true });
-    editSubRegion(id, title, description, image, includedetails, excludedetails)
+    editSubRegion(
+      id,
+      title,
+      description,
+      image,
+      packagebooking,
+      nonpackagebooking
+    )
       .then((response) => {
         const updatedSubRegions = state?.subRegions?.map((subregion) => {
           if (subregion._id === id) {
@@ -212,13 +219,14 @@ const Asubregion = () => {
       ),
     },
     {
-      title: "Includedetails",
-      dataIndex: "includedetails",
-      key: "includedetails",
+      title: "Package Booking",
+      dataIndex: "packagebooking",
+      key: "packagebooking",
       render: (text) => (
         <p
           style={{
             width: "90%",
+            wordWrap: "break-word",
           }}
           className="dashboard-paragraph"
         >
@@ -228,13 +236,14 @@ const Asubregion = () => {
     },
 
     {
-      title: "Excludedetails",
-      dataIndex: "excludedetails",
-      key: "excludedetails",
+      title: "Non Package Booking",
+      dataIndex: "nonpackagebooking",
+      key: "nonpackagebooking",
       render: (text) => (
         <p
           style={{
             width: "90%",
+            wordWrap: "break-word",
           }}
           className="dashboard-paragraph"
         >
@@ -301,16 +310,16 @@ const Asubregion = () => {
                   title,
                   description,
                   image,
-                  includedetails,
-                  excludedetails,
+                  packagebooking,
+                  nonpackagebooking,
                 } = subregion;
                 handleEditImageUpload(
                   _id._id,
                   title,
                   description,
                   newImage || image,
-                  includedetails,
-                  excludedetails
+                  packagebooking,
+                  nonpackagebooking
                 );
                 setState({ ...state, modalVisible: false });
               }}
@@ -341,29 +350,29 @@ const Asubregion = () => {
                   }
                   name="description"
                 />
-                <label>Includedetails</label>
+                <label>Package Booking</label>
                 <TextArea
                   rows={6}
                   onChange={(e) =>
-                    handleSubmit("includedetails", _id._id, e.target.value)
+                    handleSubmit("packagebooking", _id._id, e.target.value)
                   }
                   value={
                     state?.subRegions?.find((el) => el._id === _id._id)
-                      ?.includedetails || ""
+                      ?.packagebooking || ""
                   }
-                  name="includedetails"
+                  name="packagebooking"
                 />
-                <label>Excludedetails</label>
+                <label>Non Package Booking</label>
                 <TextArea
                   rows={6}
                   onChange={(e) =>
-                    handleSubmit("excludedetails", _id._id, e.target.value)
+                    handleSubmit("nonpackagebooking", _id._id, e.target.value)
                   }
                   value={
                     state?.subRegions?.find((el) => el._id === _id._id)
-                      ?.excludedetails || ""
+                      ?.nonpackagebooking || ""
                   }
-                  name="excludedetails"
+                  name="nonpackagebooking"
                 />
                 <br />
                 <br />
@@ -418,8 +427,8 @@ const Asubregion = () => {
     _id: item?._id,
     title: item?.title,
     description: item?.description,
-    includedetails: item?.includedetails,
-    excludedetails: item?.excludedetails,
+    packagebooking: item?.packagebooking,
+    nonpackagebooking: item?.nonpackagebooking,
     image: [
       <SubRegionImage region={item?.image?.[0]} url="uploads" />,
       <SubRegionImage region={item?.image?.[1]} url="uploads" />,
@@ -476,25 +485,27 @@ const Asubregion = () => {
                 rows={6}
                 name="description"
               />
-              <label>Includedetails</label>
+              <label>Package Booking</label>
               <TextArea
                 type="text"
-                placeholder="Subregion includedetails"
-                onChange={(e) => handleChange("includedetails", e.target.value)}
-                value={state.newSubRegion.includedetails}
+                placeholder="Subregion packagebooking"
+                onChange={(e) => handleChange("packagebooking", e.target.value)}
+                value={state.newSubRegion.packagebooking}
                 required
                 rows={6}
-                name="includedetails"
+                name="packagebooking"
               />
-              <label>Excludedetails</label>
+              <label>Non Package Booking</label>
               <TextArea
                 type="text"
-                placeholder="Subregion excludedetails"
-                onChange={(e) => handleChange("excludedetails", e.target.value)}
-                value={state.newSubRegion.excludedetails}
+                placeholder="Subregion nonpackagebooking"
+                onChange={(e) =>
+                  handleChange("nonpackagebooking", e.target.value)
+                }
+                value={state.newSubRegion.nonpackagebooking}
                 required
                 rows={6}
-                name="excludedetails"
+                name="nonpackagebooking"
               />
               <br />
               <br />

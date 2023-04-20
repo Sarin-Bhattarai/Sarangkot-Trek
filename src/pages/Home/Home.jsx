@@ -194,10 +194,9 @@ const Home = () => {
                 </p>
                 <p>
                   At 8,163 meters (26,781 feet) above sea level, Manaslu
-                  (Nepali: ; also known as Kutang) is the eighth-highest
-                  mountain in the world. It is located in Nepal's west central
-                  region, in the Mansiri Himal, a section of the Nepalese
-                  Himalayas.
+                  (Nepali: also known as Kutang) is the eighth-highest mountain
+                  in the world. It is located in Nepal's west central region, in
+                  the Mansiri Himal, a section of the Nepalese Himalayas.
                 </p>
                 <button
                   onClick={() => navigate("/trekking")}

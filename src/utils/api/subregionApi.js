@@ -12,8 +12,8 @@ export const postSubRegion = (
   title,
   description,
   files,
-  includedetails,
-  excludedetails
+  packagebooking,
+  nonpackagebooking
 ) => {
   const formData = new FormData();
   formData.append("title", title);
@@ -21,8 +21,8 @@ export const postSubRegion = (
   files.forEach((file) => {
     formData.append("image", file);
   });
-  formData.append("includedetails", includedetails);
-  formData.append("excludedetails", excludedetails);
+  formData.append("packagebooking", packagebooking);
+  formData.append("nonpackagebooking", nonpackagebooking);
   return axios.post(`${BaseUrl}/subRegions`, formData, {
     headers: {
       "Content-Type": "multipart/form-data",
@@ -35,8 +35,8 @@ export const editSubRegion = (
   title,
   description,
   files,
-  includedetails,
-  excludedetails
+  packagebooking,
+  nonpackagebooking
 ) => {
   const formData = new FormData();
   formData.append("title", title);
@@ -44,8 +44,8 @@ export const editSubRegion = (
   files.forEach((file) => {
     formData.append("image", file);
   });
-  formData.append("includedetails", includedetails);
-  formData.append("excludedetails", excludedetails);
+  formData.append("packagebooking", packagebooking);
+  formData.append("nonpackagebooking", nonpackagebooking);
   return axios.patch(`${BaseUrl}/subRegions/${id}`, formData, {
     headers: {
       "Content-Type": "multipart/form-data",
