@@ -200,6 +200,13 @@ svg {
 /* --------------Responsive--------------  */
 
 @media screen and (max-width: 991px) {
+  .home-image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+      url("./resources/images/Suee.jpg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
   .container {
     padding: 10px;
   }
