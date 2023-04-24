@@ -26,31 +26,31 @@ const Dashboard = () => {
   };
 
   const items = [
-    {
-      key: "/api/dashboard/region",
-      icon: <MdOutlineMyLocation />,
-      label: "Trekking",
-    },
-    {
-      key: "/api/dashboard/subRegion",
-      icon: <MdNature />,
-      label: "SubRegion",
-    },
+    // {
+    //   key: "/api/dashboard/region",
+    //   icon: <MdOutlineMyLocation />,
+    //   label: "Trekking",
+    // },
+    // {
+    //   key: "/api/dashboard/subRegion",
+    //   icon: <MdNature />,
+    //   label: "SubRegion",
+    // },
     {
       key: "/api/dashboard/faq",
       icon: <MdOutlineArrowForward />,
       label: "Faq",
     },
-    {
-      key: "/api/dashboard/team",
-      icon: <MdSportsKabaddi />,
-      label: "Team",
-    },
-    {
-      key: "/api/dashboard/others",
-      icon: <MdOutlineBuild />,
-      label: "Other Services",
-    },
+    // {
+    //   key: "/api/dashboard/team",
+    //   icon: <MdSportsKabaddi />,
+    //   label: "Team",
+    // },
+    // {
+    //   key: "/api/dashboard/others",
+    //   icon: <MdOutlineBuild />,
+    //   label: "Other Services",
+    // },
   ];
 
   return (

@@ -1,25 +1,30 @@
 import "./trekking.css";
-import React, { useState, useEffect } from "react";
-import { getRegion } from "../../utils/api/regionApi";
-import ShowImage from "../../utils/data/showImage";
+import React from "react";
+import Annapurna from "../../resources/images/annapurna.jpg";
+import Manaslu from "../../resources/images/manasluu.jpeg";
+import Dhaulagiri from "../../resources/images/dhaulagiri.jpg";
+import One from "../../resources/images/one.jpg";
+import Other from "../../resources/images/other.jpg";
+// import { getRegion } from "../../utils/api/regionApi";
+// import ShowImage from "../../utils/data/showImage";
 import { useNavigate } from "react-router-dom";
 
 const Trekking = () => {
-  const [state, setState] = useState({
-    regions: [],
-    error: null,
-  });
   const navigate = useNavigate();
-  const fetchRegions = () => {
-    setState({ ...state, error: null });
-    getRegion()
-      .then(({ data }) => setState({ ...state, regions: data, error: null }))
-      .catch({ ...state, error: null });
-  };
+  // const [state, setState] = useState({
+  //   regions: [],
+  //   error: null,
+  // });
+  // const fetchRegions = () => {
+  //   setState({ ...state, error: null });
+  //   getRegion()
+  //     .then(({ data }) => setState({ ...state, regions: data, error: null }))
+  //     .catch({ ...state, error: null });
+  // };
 
-  useEffect(() => {
-    fetchRegions();
-  }, []);
+  // useEffect(() => {
+  //   fetchRegions();
+  // }, []);
 
   return (
     <section className="trekking">
@@ -37,7 +42,7 @@ const Trekking = () => {
           Select a Region
         </h1>
         <div className="trekking-grid">
-          {state?.regions?.map((r) => {
+          {/* {state?.regions?.map((r) => {
             return (
               <>
                 <div className="grid-details">
@@ -55,7 +60,99 @@ const Trekking = () => {
                 </div>
               </>
             );
-          })}
+          })} */}
+          <div className="grid-details">
+            <img src={Annapurna} alt="annapurna" />
+            <h1>Annapurna Region</h1>
+            <p>
+              The Annapurna region, located in central Nepal, is a stunning and
+              diverse area known for its world-class trekking trails and
+              breathtaking mountain scenery. Home to the mighty Annapurna
+              mountain range.
+            </p>
+            <button
+              onClick={() => {
+                navigate("/trekking/subRegions");
+              }}
+              className="select-btn"
+            >
+              SELECT
+            </button>
+          </div>
+          <div className="grid-details">
+            <img src={Manaslu} alt="manaslu" />
+            <h1>Manaslu Region</h1>
+            <p>
+              The Manaslu region trek is a popular trekking route in Nepal that
+              offers stunning views of the Himalayas, diverse landscapes, and
+              rich cultural experiences. The highest point of the trek at an
+              altitude of 5,135 meters.
+            </p>
+            <button
+              onClick={() => {
+                navigate("/trekking/subRegions");
+              }}
+              className="select-btn"
+            >
+              SELECT
+            </button>
+          </div>
+          <div className="grid-details">
+            <img src={Dhaulagiri} alt="dhaulagiri" />
+            <h1>Dhaulagiri Region</h1>
+            <p>
+              Located in the western part of Nepal, named after the Dhaulagiri
+              mountain range, which is the seventh highest mountain in the
+              world. Dhaulagiri region offers a challenging and rewarding
+              experience for adventure seekers.
+            </p>
+            <button
+              onClick={() => {
+                navigate("/trekking/subRegions");
+              }}
+              className="select-btn"
+            >
+              SELECT
+            </button>
+          </div>
+        </div>
+
+        <div className="trekking-grid">
+          <div className="grid-details">
+            <img src={One} alt="one" />
+            <h1>One Day Trek</h1>
+            <p>
+              Exploring pokhara by visiting the most offering highly rated
+              destinations including Gupteshwor cave, Mahendra cave ,World peace
+              Pagoda, Sarangkot view point, Australian base camp and many more.
+            </p>
+            <button
+              onClick={() => {
+                navigate("/trekking/subRegions");
+              }}
+              className="select-btn"
+            >
+              SELECT
+            </button>
+          </div>
+          <div className="grid-details">
+            <img src={Other} alt="other" />
+            <h1>Other Services</h1>
+            <p>
+              We also offer you more services like Bus ticket all over Nepal,
+              Plane ticket, Bungee jumping, rafting, paragliding and many more
+              adventerous activies, transportation bookings and accoomodation
+              just for you for your ease.
+            </p>
+            <button
+              onClick={() => {
+                navigate("/trekking/subRegions");
+              }}
+              className="select-btn"
+            >
+              SELECT
+            </button>
+          </div>
         </div>
 
         <div className="package-list">

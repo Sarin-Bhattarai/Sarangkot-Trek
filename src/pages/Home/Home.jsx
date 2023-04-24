@@ -5,7 +5,7 @@ import { TiTick } from "react-icons/ti";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Test from "../../resources/images/test.jpg";
 import Everest from "../../resources/images/Everest-region.jpg";
-import Manaslu from "../../resources/images/Manaslu-region.jpg";
+import Manaslu from "../../resources/images/manaslu.jpg";
 import Region from "../../resources/images/region.jpg";
 import Korean from "../../resources/images/Korean.png";
 import Laura from "../../resources/images/Laura.png";

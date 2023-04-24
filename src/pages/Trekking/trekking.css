@@ -22,6 +22,7 @@
 .grid-details p {
   font-size: 18px;
   font-weight: 400;
+  /* text-align: justify; */
 }
 
 .select-btn {
@@ -54,7 +55,7 @@
   font-size: 17px;
 }
 
-.showImage img {
+.grid-details img {
   width: 360px;
   height: 220px;
   border-radius: 20px;

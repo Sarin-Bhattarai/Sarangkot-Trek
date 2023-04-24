@@ -28,9 +28,19 @@
   margin-top: 50px;
 }
 
+.subregion-grid-img img {
+  width: 360px;
+  height: 220px;
+  border-radius: 20px;
+}
+
 .region-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
+}
+
+.region-row h5 {
+  font-size: 18px;
 }
