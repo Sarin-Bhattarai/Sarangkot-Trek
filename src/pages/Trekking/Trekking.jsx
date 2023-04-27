@@ -4,6 +4,7 @@ import Annapurna from "../../resources/images/annapurna.jpg";
 import Manaslu from "../../resources/images/manasluu.jpeg";
 import Dhaulagiri from "../../resources/images/dhaulagiri.jpg";
 import One from "../../resources/images/one.jpg";
+import Everest from "../../resources/images/everest.jpg";
 import Other from "../../resources/images/other.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -93,6 +94,23 @@ const Trekking = () => {
             <button
               onClick={() => {
                 navigate("/trekking/oneday");
+              }}
+              className="select-btn"
+            >
+              SELECT
+            </button>
+          </div>
+          <div className="grid-details">
+            <img src={Everest} alt="everest" />
+            <h1>Everest Region</h1>
+            <p>
+              This region is well-known area located in Nepal's famous region,
+              home to Mount Everest, boasts stunning mountain views and a UNESCO
+              World Heritage Site that supports rare and endangered species.
+            </p>
+            <button
+              onClick={() => {
+                navigate("/trekking/everest");
               }}
               className="select-btn"
             >
