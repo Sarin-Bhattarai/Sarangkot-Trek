@@ -103,11 +103,6 @@ const Contact = () => {
       sub_id: 1,
     },
     {
-      label: "Panchase Trek",
-      value: "Panchase Trek",
-      sub_id: 1,
-    },
-    {
       label: "Everest Base Camp",
       value: "Everest Base Camp",
       sub_id: 2,
