@@ -83,6 +83,42 @@ const App = () => {
                 }
               />
               <Route
+                path="/trekking/manaslu"
+                exact
+                element={
+                  <>
+                    <Up />
+                    <Navbar />
+                    <Manaslu />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/trekking/dhaulagiri"
+                exact
+                element={
+                  <>
+                    <Up />
+                    <Navbar />
+                    <Dhaulagiri />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/trekking/oneday"
+                exact
+                element={
+                  <>
+                    <Up />
+                    <Navbar />
+                    <Oneday />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
                 path="/contact"
                 exact
                 element={

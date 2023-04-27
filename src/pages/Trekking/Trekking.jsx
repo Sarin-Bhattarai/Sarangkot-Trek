@@ -5,27 +5,10 @@ import Manaslu from "../../resources/images/manasluu.jpeg";
 import Dhaulagiri from "../../resources/images/dhaulagiri.jpg";
 import One from "../../resources/images/one.jpg";
 import Other from "../../resources/images/other.jpg";
-// import { getRegion } from "../../utils/api/regionApi";
-// import ShowImage from "../../utils/data/showImage";
 import { useNavigate } from "react-router-dom";
 
 const Trekking = () => {
   const navigate = useNavigate();
-  // const [state, setState] = useState({
-  //   regions: [],
-  //   error: null,
-  // });
-  // const fetchRegions = () => {
-  //   setState({ ...state, error: null });
-  //   getRegion()
-  //     .then(({ data }) => setState({ ...state, regions: data, error: null }))
-  //     .catch({ ...state, error: null });
-  // };
-
-  // useEffect(() => {
-  //   fetchRegions();
-  // }, []);
-
   return (
     <section className="trekking">
       <div className="container">
@@ -42,25 +25,6 @@ const Trekking = () => {
           Select a Region
         </h1>
         <div className="trekking-grid">
-          {/* {state?.regions?.map((r) => {
-            return (
-              <>
-                <div className="grid-details">
-                  <ShowImage region={r?.image} url="uploads" />
-                  <h1>{r?.title}</h1>
-                  <p>{r?.description}</p>
-                  <button
-                    onClick={() => {
-                      navigate("/trekking/subRegions");
-                    }}
-                    className="select-btn"
-                  >
-                    SELECT
-                  </button>
-                </div>
-              </>
-            );
-          })} */}
           <div className="grid-details">
             <img src={Annapurna} alt="annapurna" />
             <h1>Annapurna Region</h1>
@@ -90,7 +54,7 @@ const Trekking = () => {
             </p>
             <button
               onClick={() => {
-                navigate("/trekking/subRegions");
+                navigate("/trekking/manaslu");
               }}
               className="select-btn"
             >
@@ -108,7 +72,7 @@ const Trekking = () => {
             </p>
             <button
               onClick={() => {
-                navigate("/trekking/subRegions");
+                navigate("/trekking/dhaulagiri");
               }}
               className="select-btn"
             >
@@ -128,7 +92,7 @@ const Trekking = () => {
             </p>
             <button
               onClick={() => {
-                navigate("/trekking/subRegions");
+                navigate("/trekking/oneday");
               }}
               className="select-btn"
             >
@@ -146,7 +110,7 @@ const Trekking = () => {
             </p>
             <button
               onClick={() => {
-                navigate("/trekking/subRegions");
+                navigate("/others");
               }}
               className="select-btn"
             >
