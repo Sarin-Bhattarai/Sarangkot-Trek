@@ -288,8 +288,18 @@ const Contact = () => {
       sub_id: 8,
     },
     {
-      label: "Rafting",
-      value: "Rafting",
+      label: "Accomodations",
+      value: "Accomodations",
+      sub_id: 9,
+    },
+    {
+      label: "Bungee Jumping",
+      value: "Bungee Jumping",
+      sub_id: 9,
+    },
+    {
+      label: "Hiking",
+      value: "Hiking",
       sub_id: 9,
     },
     {
@@ -298,28 +308,18 @@ const Contact = () => {
       sub_id: 9,
     },
     {
-      label: "Adventures",
-      value: "Adventures",
+      label: "Korean Food Service",
+      value: "Korean Food Service",
       sub_id: 9,
     },
     {
-      label: "Village Tour",
-      value: "Village Tour",
+      label: "Paragliding",
+      value: "Paragliding",
       sub_id: 9,
     },
     {
-      label: "Buddhist Circuit Trek",
-      value: "Buddhist Circuit Trek",
-      sub_id: 9,
-    },
-    {
-      label: "Bhutan Tour",
-      value: "Bhutan Tour",
-      sub_id: 9,
-    },
-    {
-      label: "Tibet Tour",
-      value: "Tibet Tour",
+      label: "Plane & Bus Ticket",
+      value: "Plane & Bus Ticket",
       sub_id: 9,
     },
   ];
