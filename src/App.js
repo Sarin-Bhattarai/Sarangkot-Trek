@@ -11,6 +11,7 @@ import SubRegion from "./pages/subRegion/SubRegion";
 import Manaslu from "./pages/insideRegion/Manaslu/Manaslu";
 import Dhaulagiri from "./pages/insideRegion/Dhaulagiri/Dhaulagiri";
 import Oneday from "./pages/insideRegion/Oneday/Oneday";
+import Everest from "./pages/insideRegion/Everest/Everest";
 import Other from "./pages/Other/Other";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
@@ -102,6 +103,18 @@ const App = () => {
                     <Up />
                     <Navbar />
                     <Dhaulagiri />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/trekking/everest"
+                exact
+                element={
+                  <>
+                    <Up />
+                    <Navbar />
+                    <Everest />
                     <Footer />
                   </>
                 }

@@ -15,6 +15,8 @@ import DH from "../../../resources/assets/dh.jpeg";
 import DH2 from "../../../resources/assets/dh2.jpg";
 import DH3 from "../../../resources/assets/dh3.jpg";
 import AT from "../../../resources/assets/at.jpeg";
+import AT2 from "../../../resources/assets/at2.jpeg";
+import AT3 from "../../../resources/assets/at3.jpg";
 
 const Oneday = () => {
   return (
@@ -352,8 +354,8 @@ const Oneday = () => {
             </p>
             <div className="subregion-grid-img">
               <img src={AT} alt="a1" />
-              <img src={AT} alt="a1" />
-              <img src={AT} alt="a1" />
+              <img src={AT2} alt="a1" />
+              <img src={AT3} alt="a1" />
             </div>
 
             <div className="region-row">
