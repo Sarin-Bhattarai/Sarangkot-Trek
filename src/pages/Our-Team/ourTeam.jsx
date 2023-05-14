@@ -59,14 +59,15 @@ const OurTeam = () => {
               Master or American express) also possible. Please ask detail
               information regarding payment process by Credit card at Payment
               Methods/options. 4 % extra bank surchare is applicable if you wish
-              to make payment by credit cards. Out of Town Adventure Pvt. Ltd.
-              is a Nepal based local trekking agency which is a trustworthy and
-              registered Company under the laws of Nepal Tourism Industry and
-              accepts your bookings under the following terms and conditions.
-              All bookings are made with Out of Town Adventure Pvt. Ltd.,
-              Registered Company Number 207765/075/076 (hereinafter referred to
-              as The Company) whose registered office is the Pokhara-6 khahara,
-              Nepal. The Head of The Company is <b>Harry Lal Sharma</b>.
+              to make payment by credit cards. Sarangkot Treks and Expedition
+              Pvt. Ltd. is a Nepal based local trekking agency which is a
+              trustworthy and registered Company under the laws of Nepal Tourism
+              Industry and accepts your bookings under the following terms and
+              conditions. All bookings are made with Sarangkot Treks and
+              Expedition Pvt. Ltd., Registered Company Number 302977/079/080
+              (hereinafter referred to as The Company) whose registered office
+              is the Pokhara-6 Nareswor, Nepal. The Head of The Company is{" "}
+              <b>Hari Lal Sharma</b>.
             </p>
 
             <ul className="ul-team">
@@ -92,19 +93,19 @@ const OurTeam = () => {
               </li>
               <li>
                 The rest of the costs want to clear on arrival day (this will
-                follow for most of Out of Town Adventure Pvt. Ltd.). However, we
-                can request you to make full cost earlier than your arrival if
-                this is quintessential (especially for Trips in Tibet and Bhutan
-                ). Be mindful, we also reserve the right to cancel your day out
-                furnished full volume is now not paid in requested time or on
-                arrival day.
+                follow for most of Sarangkot Treks and Expedition Pvt. Ltd.).
+                However, we can request you to make full cost earlier than your
+                arrival if this is quintessential (especially for Trips in Tibet
+                and Bhutan ). Be mindful, we also reserve the right to cancel
+                your day out furnished full volume is now not paid in requested
+                time or on arrival day.
               </li>
               <li>
-                Any day trip reserving Payment procedures is very easy with Out
-                of Town Adventure Pvt. Ltd... We are given your remaining minute
-                reserving also, but the full charge of the total tour fee has to
-                be made in decorating if essential or can pay the full cost on
-                arrival day.
+                Any day trip reserving Payment procedures is very easy with
+                Sarangkot Treks and Expedition Pvt. Ltd. We are given your
+                remaining minute reserving also, but the full charge of the
+                total tour fee has to be made in decorating if essential or can
+                pay the full cost on arrival day.
               </li>
               <li>
                 On our holiday trips tour/trek packages, rooms, or tents are
@@ -116,10 +117,10 @@ const OurTeam = () => {
                 No refund will be made to consumers who drop out from the trip
                 regardless of whatever components stay unused in the itinerary.
                 In case of the journey damaged of early return upon client’s
-                very own want or causes, Out of Town Adventure shall no longer
-                be accountable to any refund of the days now not utilized.
-                Clients have to pay for the lodge or any extra expenses incurred
-                after leaving the itinerary.
+                very own want or causes, Sarangkot Treks and Expedition Pvt.
+                Ltd.shall no longer be accountable to any refund of the days now
+                not utilized. Clients have to pay for the lodge or any extra
+                expenses incurred after leaving the itinerary.
               </li>
               <li>
                 It is a necessary circumstance that you well known that this is
@@ -129,9 +130,9 @@ const OurTeam = () => {
                 home flights, strikes, Government regulations, local weather or
                 herbal casualties, etc. In such cases, We shall be accountable
                 for providing suitable options which should be decided upon
-                mutual agreement. If an agreement cannot be made, Out of Town
-                Adventure shall be solely responsible for refund after deducting
-                costs already incurred.
+                mutual agreement. If an agreement cannot be made, Sarangkot
+                Treks and Expedition Pvt. Ltd. shall be solely responsible for
+                refund after deducting costs already incurred.
               </li>
               <li>
                 If you no longer show off at the assembly aspect exclusive on
@@ -178,10 +179,10 @@ const OurTeam = () => {
                 was once already confirmed &amp;amp; booked through the deposit.
               </li>
               <li>
-                A tour/trek information who represents Out of Town Adventure
-                Pvt. Ltd. deserves all authority at some stage in your tours. If
-                you commit any illegal act, you are compelled to depart the
-                tour. No refund will be made in such a case.
+                A tour/trek information who represents Sarangkot Treks and
+                Expedition Pvt. Ltd. deserves all authority at some stage in
+                your tours. If you commit any illegal act, you are compelled to
+                depart the tour. No refund will be made in such a case.
               </li>
               <li>
                 We put us each effort to make certainly satisfied visiting of
@@ -222,27 +223,27 @@ const OurTeam = () => {
                 day out to the most extent permitted thru Nepalese law.
               </li>
               <li>
-                You properly recognized that Out of Town Adventure Pvt. Ltd.
-                contracts with a community of companies, authorities groups and
-                individuals, to resource in the walking of its tours, treks,
-                walking, holidays &amp;amp; expeditions. To the great of Out of
-                Town Adventure Pvt. Ltd. knowledge, these 0.33 events are
-                certified to function the obligations they are gotten smaller to
-                perform. However, Out of Town Adventure Pvt., Ltd. will not be
-                held responsible for any injury, damage, loss, delay, or
-                irregularity that might also take vicinity due to the conduct of
-                these 1/3 parties.
+                You properly recognized that Sarangkot Treks and Expedition Pvt.
+                Ltd. contracts with a community of companies, authorities groups
+                and individuals, to resource in the walking of its tours, treks,
+                walking, holidays &amp;amp; expeditions. To the great of
+                Sarangkot Treks and Expedition Pvt. Ltd. knowledge, these 0.33
+                events are certified to function the obligations they are gotten
+                smaller to perform. However, Sarangkot Treks and Expedition Pvt.
+                Ltd. will not be held responsible for any injury, damage, loss,
+                delay, or irregularity that might also take vicinity due to the
+                conduct of these 1/3 parties.
               </li>
               <li>
-                Out of Town Adventure Pvt., Ltd. will no longer get hold of duty
-                or legal responsibility for any traveler who contravenes any
-                legislation.
+                Sarangkot Treks and Expedition Pvt. Ltd. will no longer get hold
+                of duty or legal responsibility for any traveler who contravenes
+                any legislation.
               </li>
               <li>
                 Participants have to be inappropriate fitness and bodily
                 condition. Contributors with pre- existing scientific troubles
-                or prerequisites must make these conscious of Out of Town
-                Adventure Pvt. Ltd. at the time of booking. Medical and
+                or prerequisites must make these conscious of Sarangkot Treks
+                and Expedition Pvt. Ltd. at the time of booking. Medical and
                 evacuation expenditures are the obligation of the participant.
                 It is also imperative that you seek advice from your scientific
                 health practitioner for vaccination and specific scientific
@@ -252,17 +253,18 @@ const OurTeam = () => {
                 The bad climate in mountain areas can cause domestic flight
                 delays, especially in Everest, Jomsom, phaplu, Simikot,
                 Kanchenjunga, and any different faraway mountain areas in Nepal.
-                In the trip of delayed domestic flights, Out of Town Adventure
-                Pvt., Ltd. will meet departing town lodging fees before your
-                trip, if the value of lodging is attainable to cowl by using the
-                ability of the Budget of that day. Out of Town Adventure Pvt.
-                Ltd. reserves the right to reroute treks or use street transport
-                for extended delays however these adjustments may additionally
-                have an effect on the time-out cost, which you have to bear. Out
-                of Town Adventure Pvt. Ltd. does no longer get hold of any
-                accountability for costs incurred as a cease result of ignored
-                international flight connection however will help to make
-                alternative preparations the location viable with extra costs.
+                In the trip of delayed domestic flights, Sarangkot Treks and
+                Expedition Pvt. Ltd. will meet departing town lodging fees
+                before your trip, if the value of lodging is attainable to cowl
+                by using the ability of the Budget of that day. Sarangkot Treks
+                and Expedition Pvt. Ltd. reserves the right to reroute treks or
+                use street transport for extended delays however these
+                adjustments may additionally have an effect on the time-out
+                cost, which you have to bear. Sarangkot Treks and Expedition
+                Pvt. Ltd. does no longer get hold of any accountability for
+                costs incurred as a cease result of ignored international flight
+                connection however will help to make alternative preparations
+                the location viable with extra costs.
               </li>
               <li>
                 Trekking in the ways flung areas or in as described above, in
